@@ -33,28 +33,29 @@
 
     <section class="features">
       <div class="features-wrapper">
-        <div class="gallery-content gallery-content-3 ">
+        <div class="gallery-content">
           <ul class="slider-list">
             <li class="slider-item slide ">
-              <div class="gallery-text-container">
+              <div class="gallery-text-container gallery-content-1">
                 <p class="gallery-text">Долго, дорого,<br> скрупулезно!</p>
                 <p class=" gallery-small-txt">Математически выверенный дизайн<br>для вашего сайта или мобильного
                   приложения</p>
                 <button class="button"><span>Узнать больше</span></button>
               </div>
-              
+
             </li>
-            <li class="slider-item slide ">
-              <div class="gallery-text-container">
+            <li class="slider-item slide-current ">
+              <div class="gallery-text-container gallery-content-2">
                 <p class="gallery-text">Любим математику<br> как никто другой</p>
-                <p class=" gallery-small-txt">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+                <p class=" gallery-small-txt">Никакого креатива, только математические формулы<br> для расчета идеальных
+                  пропорций</p>
                 <button class="button"><span>Узнать больше</span></button>
               </div>
             </li>
-            <li class="slider-item slide slide-current">
-              <div class="gallery-text-container">
+            <li class="slider-item slide">
+              <div class="gallery-text-container gallery-content-3">
                 <p class="gallery-text">Только ночь,<br>
-                только хардкор</p>
+                  только хардкор</p>
                 <p class=" gallery-small-txt">Работать днем, как все? Мы против этого.<br>
                   Ближе к полуночи работа только начинается.</p>
                 <button class="button"><span>Узнать больше</span></button>
@@ -63,9 +64,9 @@
           </ul>
 
           <div class="gallery-button-container">
-            <button class="gallery-button gallery-button-1" type="button" aria-label="Первый слайд" disabled></button>
-            <button class="gallery-button gallery-button-2" type="button" aria-label="Второй слайд"></button>
-            <button class="gallery-button gallery-button-3" type="button" aria-label="Третий слайд"></button>
+            <button class="gallery-button" type="button" aria-label="Первый слайд" disabled></button>
+            <button class="gallery-button gallery-button-current" type="button" aria-label="Второй слайд"></button>
+            <button class="gallery-button" type="button" aria-label="Третий слайд"></button>
           </div>
         </div>
       </div>
@@ -157,16 +158,17 @@
   </main>
   <footer class="main-footer">
     <section class="contacts-wrapper">
-      <div class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
-        <div class="contacts-box">
-          <p class="contacts-address"> наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
-          <p></p>
-          <p><a class="contacts-phone" href="tel +78005558628">+7 800 555-86-28</a></p>
+      <iframe src="https://yandex.ru/maps/-/CCUCATxTxB" width="1440" height="416" frameborder="0"></iframe>
+        <div class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
+          <div class="contacts-box">
+            <p class="contacts-address"> наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+            <p></p>
+            <p><a class="contacts-phone" href="tel +78005558628">+7 800 555-86-28</a></p>
+          </div>
+          <button class="button btn-send"><span>Напишите нам</span></button>
         </div>
-        <button class="button btn-send"><span>Напишите нам</span></button>
-      </div>
     </section>
     <section class="footer-social">
       <div class="social-container">
@@ -192,7 +194,7 @@
       </div>
     </section>
   </footer>
-  <section class="appointment">
+  <section class="appointment visually-hidden">
     <div class="appointment-wrapper">
       <div class="appointment-text">
         <h2>Напишите нам</h2>
@@ -201,11 +203,12 @@
         <div class="appointment-form-container">
           <div class="form-name">
             <label for="appointment-name">Ваше имя</label>
-            <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="appointment-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
           </div>
           <div class="form-email">
-            <label for="appointment-email">Пароль</label>
-            <input id="appointment-email" type="email" name="email" placeholder="email@example.com ">
+            <label for="appointment-email">Ваш e-mail</label>
+            <input class="appointment-email" id="appointment-email" type="email" name="email"
+              placeholder="email@example.com ">
           </div>
         </div>
         <div>
@@ -220,9 +223,10 @@
         <button class="button form-button"><span>Отправить</span></button>
       </form>
     </div>
-
+    <button class="btn-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
-
+  <script src="../Nerds/js/fedback.js"></script>
+  <script src="../Nerds/js/map.js"></script>
 
 </body>
 
